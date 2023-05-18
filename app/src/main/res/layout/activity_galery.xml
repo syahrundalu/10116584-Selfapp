@@ -214,11 +214,13 @@
                             android:layout_marginRight="@dimen/jarak_20dp"
                             android:gravity="right">
                             <ImageView
+                                android:id="@+id/pause_gravity"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/pause"
                                 android:layout_marginRight="@dimen/jarak_20dp"/>
                             <ImageView
+                                android:id="@+id/play_gravity"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/play"/>
@@ -267,11 +269,13 @@
                             android:layout_marginRight="@dimen/jarak_20dp"
                             android:gravity="right">
                         <ImageView
+                            android:id="@+id/pause_flyAway"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/pause"
                             android:layout_marginRight="@dimen/jarak_20dp"/>
                         <ImageView
+                            android:id="@+id/play_flyAway"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/play"/>
