@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/header_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_top"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginHorizontal="@dimen/jarak_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Activity"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/bold"
+                    android:textSize="@dimen/jarak_14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/jarak_10dp"
+                    android:background="@drawable/cream_box"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/jarak_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/jarak_20dp"
+                        android:src="@drawable/book"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/jarak_20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Study"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 AM - 5:00 PM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/jarak_10dp"
+                    android:background="@drawable/cream_box"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/jarak_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/jarak_20dp"
+                        android:src="@drawable/spotlights"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/jarak_20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="On Stage"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7:00 PM - 10:00 PM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/jarak_10dp"
+                    android:background="@drawable/cream_box"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/jarak_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/jarak_20dp"
+                        android:src="@drawable/computer"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/jarak_20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Working/Hangout"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 PM - 1:00 AM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/jarak_10dp"
+                    android:background="@drawable/cream_box"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/jarak_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/jarak_20dp"
+                        android:src="@drawable/clock"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/jarak_20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rest"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2:00 AM - 8:00 AM"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friend List"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginTop="@dimen/jarak_20dp"
+                    android:textSize="@dimen/jarak_14dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/jarak_10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/jarak_10dp"
+                    android:background="@drawable/cream_box">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/krisna"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:layout_height="wrap_content"
+                        android:text="Krisna Pamadya"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:fontFamily="@font/semibold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mural Artist"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:fontFamily="@font/regular"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/jarak_20dp"
+                        android:padding="@dimen/jarak_10dp"
+                        android:background="@drawable/cream_box">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/augrelia"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/jarak_8dp"
+                            android:layout_height="wrap_content"
+                            android:text="Augrelia Dheavanka"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Doctor"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/jarak_10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="@dimen/jarak_10dp"
+                        android:background="@drawable/cream_box">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bintang"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/jarak_8dp"
+                            android:layout_height="wrap_content"
+                            android:text="Krisna Pamadya"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Illustrator Artist"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/jarak_20dp"
+                        android:padding="@dimen/jarak_10dp"
+                        android:background="@drawable/cream_box">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arulisaa"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="@dimen/jarak_8dp"
+                            android:layout_height="wrap_content"
+                            android:text="Arul Isa"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/semibold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vocalist Miso Tessera"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:fontFamily="@font/regular"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="@dimen/jarak_20dp"
+        android:paddingVertical="@dimen/jarak_14dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="@dimen/jarak_20dp"
+        android:background="@drawable/navbar_bg"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/beranda"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"/>
+        <ImageView
+            android:id="@+id/daily"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list"/>
+        <ImageView
+            android:id="@+id/galery"
+            android:layout_marginRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image"/>
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
