@@ -11,8 +11,8 @@ import android.widget.ImageView;
 public class Galery extends AppCompatActivity {
 
     ImageView homeButton, dailyButton;
-    ImageView playGravity, pauseGravity;
-    ImageView playFlyAway, pauseFlyAway;
+    ImageView playGravity, pauseGravity, stopGravity;
+    ImageView playFlyAway, pauseFlyAway, stopFlyAway;
 
     MediaPlayer gravity, flyaway;
 
@@ -42,6 +42,7 @@ public class Galery extends AppCompatActivity {
 
         playGravity = findViewById(R.id.play_gravity);
         pauseGravity = findViewById(R.id.pause_gravity);
+        stopGravity = findViewById(R.id.stop_gravity);
 
         playGravity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,10 +58,19 @@ public class Galery extends AppCompatActivity {
             }
         });
 
+        stopGravity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gravity.stop();
+                gravity.prepareAsync();
+            }
+        });
+
         flyaway = MediaPlayer.create(this, R.raw.flyaway);
 
         playFlyAway = findViewById(R.id.play_flyAway);
         pauseFlyAway = findViewById(R.id.pause_flyAway);
+        stopFlyAway = findViewById(R.id.stop_flyAway);
 
         playFlyAway.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +83,14 @@ public class Galery extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 flyaway.pause();
+            }
+        });
+
+        stopFlyAway.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flyaway.stop();
+                flyaway.prepareAsync();
             }
         });
 
