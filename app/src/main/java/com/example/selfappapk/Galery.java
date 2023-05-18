@@ -2,11 +2,17 @@ package com.example.selfappapk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.ImageView;
+
+
 
 public class Galery extends AppCompatActivity {
 
@@ -16,12 +22,27 @@ public class Galery extends AppCompatActivity {
 
     MediaPlayer gravity, flyaway;
 
+    private WebView webView;
+    private static final String YOUTUBE_VIDEO_ID = "DJeJYzjq11U";
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_galery);
 
+        webView = findViewById(R.id.videoPlay);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        webView.setWebChromeClient(new WebChromeClient());
+
+        String iframeVideoUrl = "https://www.youtube.com/embed/" + YOUTUBE_VIDEO_ID;
+        webView.loadUrl(iframeVideoUrl);
+
+
+        /*Navigation*/
         homeButton = findViewById(R.id.beranda);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +59,7 @@ public class Galery extends AppCompatActivity {
             }
         });
 
+        /*Music Playback*/
         gravity = MediaPlayer.create(this, R.raw.gravity);
 
         playGravity = findViewById(R.id.play_gravity);
@@ -94,5 +116,10 @@ public class Galery extends AppCompatActivity {
             }
         });
 
-        }
+
+
     }
+
+}
+
+
