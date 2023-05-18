@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -16,7 +17,7 @@ import android.widget.ImageView;
 
 public class Galery extends AppCompatActivity {
 
-    ImageView homeButton, dailyButton;
+    ImageView homeButton, dailyButton, profileButton;
     ImageView playGravity, pauseGravity, stopGravity;
     ImageView playFlyAway, pauseFlyAway, stopFlyAway;
 
@@ -56,6 +57,14 @@ public class Galery extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Galery.this, dailyActivity.class));
+            }
+        });
+
+        profileButton = findViewById(R.id.profile);
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Galery.this, profile.class));
             }
         });
 
