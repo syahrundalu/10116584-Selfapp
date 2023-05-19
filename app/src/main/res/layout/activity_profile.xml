@@ -214,6 +214,80 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/instagram_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/jarak_10dp"
+                            android:paddingVertical="@dimen/jarak_14dp"
+                            android:paddingHorizontal="42dp"
+                            android:background="@color/green">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/instagram"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Instagram"
+                                android:layout_marginTop="@dimen/jarak_8dp"
+                                android:fontFamily="@font/bold"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="syahrundalu"
+                                android:fontFamily="@font/regular"
+                                android:textSize="@dimen/text_size_8sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/facebook_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:layout_marginTop="@dimen/jarak_10dp"
+                            android:paddingVertical="@dimen/jarak_14dp"
+                            android:paddingHorizontal="44dp"
+                            android:background="@color/green">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/facebook"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Facebook"
+                                android:layout_marginTop="@dimen/jarak_8dp"
+                                android:fontFamily="@font/bold"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="syahrundalu"
+                                android:fontFamily="@font/regular"
+                                android:textSize="@dimen/text_size_8sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
 
                 </LinearLayout>
 
@@ -253,25 +327,25 @@
         <ImageView
             android:id="@+id/home"
             android:layout_marginRight="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/home"/>
         <ImageView
             android:id="@+id/daily"
             android:layout_marginRight="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/list"/>
         <ImageView
             android:id="@+id/galery"
             android:layout_marginRight="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/image"/>
         <ImageView
             android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/user"/>
 
     </LinearLayout>

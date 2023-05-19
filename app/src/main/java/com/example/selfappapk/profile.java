@@ -3,16 +3,19 @@ package com.example.selfappapk;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class profile extends AppCompatActivity {
 
 
     ImageView homeButton, dailyButton, galeryButton;
+    LinearLayout InstagramButton, FacebookButton;
     private WebView webView;
 
     @Override
@@ -52,5 +55,35 @@ public class profile extends AppCompatActivity {
                 startActivity(new Intent(profile.this, Galery.class));
             }
         });
+
+        InstagramButton = findViewById(R.id.instagram_link);
+        InstagramButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInstagramAccount();
+            }
+        });
+
+        FacebookButton = findViewById(R.id.facebook_link);
+        FacebookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFacebookAccount();
+            }
+        });
+    }
+
+    private void openInstagramAccount() {
+        String username = "syahrundalu";
+        String url = "https://www.instagram.com/" + username;
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(intent);
+    }
+
+    private void openFacebookAccount() {
+        String username = "syahrundalu";
+        String url = "https://www.facebook.com/" + username;
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(intent);
     }
 }

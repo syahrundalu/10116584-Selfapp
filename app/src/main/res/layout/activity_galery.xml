@@ -215,20 +215,20 @@
                             android:gravity="right">
                             <ImageView
                                 android:id="@+id/stop_gravity"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:src="@drawable/stop"
                                 android:layout_marginRight="@dimen/jarak_20dp"/>
                             <ImageView
                                 android:id="@+id/pause_gravity"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:src="@drawable/pause"
                                 android:layout_marginRight="@dimen/jarak_20dp"/>
                             <ImageView
                                 android:id="@+id/play_gravity"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
                                 android:src="@drawable/play"/>
 
                         </LinearLayout>
@@ -277,20 +277,20 @@
                             android:gravity="right">
                         <ImageView
                             android:id="@+id/stop_flyAway"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:src="@drawable/stop"
                             android:layout_marginRight="@dimen/jarak_20dp"/>
                         <ImageView
                             android:id="@+id/pause_flyAway"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:src="@drawable/pause"
                             android:layout_marginRight="@dimen/jarak_20dp"/>
                         <ImageView
                             android:id="@+id/play_flyAway"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:src="@drawable/play"/>
 
                         </LinearLayout>
@@ -346,27 +346,27 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
-            android:id="@+id/beranda"
+            android:id="@+id/home"
             android:layout_marginRight="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/home"/>
         <ImageView
             android:id="@+id/daily"
             android:layout_marginRight="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/list"/>
         <ImageView
             android:id="@+id/galery"
             android:layout_marginRight="60dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/image"/>
         <ImageView
             android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/user"/>
 
     </LinearLayout>
