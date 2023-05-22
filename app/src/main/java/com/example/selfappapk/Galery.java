@@ -44,7 +44,7 @@ public class Galery extends AppCompatActivity {
 
 
         /*Navigation*/
-        homeButton = findViewById(R.id.beranda);
+        homeButton = findViewById(R.id.home);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

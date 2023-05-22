@@ -288,7 +288,7 @@
             android:layout_marginRight="60dp"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/home"/>
+            android:src="@drawable/homeactive"/>
         <ImageView
             android:id="@+id/daily"
             android:layout_marginRight="60dp"
