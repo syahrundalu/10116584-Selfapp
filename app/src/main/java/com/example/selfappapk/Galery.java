@@ -1,5 +1,11 @@
 package com.example.selfappapk;
 
+/*
+    Tanggal Pengerjaan : 25 Mei 2023
+    NIM : 10116584
+    NAMA : Muhammad Syahrun Dalu
+*/
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
